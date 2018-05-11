@@ -1,3 +1,4 @@
+import { TestComponent } from './test/test.component';
 /*
  * Copyright (c) 2016 VMware, Inc. All Rights Reserved.
  * This software is released under MIT license.
@@ -13,7 +14,8 @@ import { HomeComponent } from './home/home.component';
 export const ROUTES: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
-    {path: 'about', component: AboutComponent}
+    {path: 'about', component: AboutComponent},
+    {path: 'test', component: TestComponent}
 ];
 
 export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);
